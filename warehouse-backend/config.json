@@ -1,0 +1,36 @@
+{
+  "deviceConfig": {
+    "deviceId": "CAM_SKU_01",
+    "deviceName": "SKU相机1",
+    "area": "SKU分拣区"
+  },
+  "tcpConfig": {
+    "host": "127.0.0.1",
+    "port": 8000,
+    "reconnectInterval": 5000,
+    "maxReconnectAttempts": 10,
+    "keepAlive": true,
+    "timeout": 30000
+  },
+  "webSocketConfig": {
+    "port": 8080,
+    "host": "0.0.0.0"
+  },
+  "signalConfig": {
+    "triggerSignal": "OCCH2:1",
+    "packageIdPrefix": "PKG",
+    "defaultSortCode": 1
+  },
+  "heartbeatConfig": {
+    "enabled": true,
+    "interval": 30000,
+    "timeout": 90000,
+    "enableOnlyWhenClientsConnected": true,
+    "description": "WebSocket heartbeat between backend and frontend only, TCP does not need heartbeat"
+  },
+  "logging": {
+    "level": "info",
+    "enableConsole": true,
+    "enableFile": false
+  }
+}
